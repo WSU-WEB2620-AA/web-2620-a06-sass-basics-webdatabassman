@@ -1,0 +1,31 @@
+.nav {
+    position: absolute;
+    right: 0em;
+    top: 2.2em;
+    ul {
+      list-style-type: $none;
+      li {
+        float: left;
+        &:last-child {
+          padding-right: 0;
+        }
+        a, span {
+          display: $block;
+          margin-left: 0.7em;
+          padding: 0.80em 1.2em;
+          letter-spacing: 0.06em;
+          text-decoration: $none;
+          text-transform: $upper;
+          font-size: 1.1em;
+          outline: 0;
+          color: #333;
+        }
+      }
+    }
+    li.active a {
+      background: $blue;
+      border-radius: 5px;
+      color: $light-red;
+    }
+  }
+  
